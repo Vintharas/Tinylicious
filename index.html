@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Tinylicious: A Simply Delicious jQuery Widget</title>
+		<link type="text/css" rel="stylesheet" href="example.css" />
+		<link type="text/css" rel="stylesheet" href="tinylicious.css" />
+		<script type="text/javascript" src="lib/jquery/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				Tinylicious.LoadUserBookmarks('vintharas', 5);
+			});
+		</script>
+    </head>
+    <body>
+    	<div id="content">
+			<h1>
+				Tinylicious: A Simply Delicious jQuery Widget
+			</h1>
+	    	<div id="tinylicious">
+	    	    <p class="title"><span class="my">My</span>Delicious</p>
+				<ol>
+				</ol>	
+	    	</div>
+			<h2>Tinylicious?</h2>
+			<p>
+				Tinylicious is a very simple <a href="http://www.delicious.com/" title="Delicious">delicious</a> 
+				widget coded using <a href="http://jquery.com/" title="jQuery">jQuery</a> and <a href="http://en.wikipedia.org/wiki/JSON" title="JSON">JSON</a>.
+			</p>
+			<p>
+				Current features are:
+			</p>
+			<ul>
+				<li>Retrieval and display of the most recent delicious public bookmarks of a given user.</li>
+			</ul>
+			<h2>Setup!</h2>
+			<p>
+				The setup  is pretty straightforward:
+			</p>
+			<p>
+				1. Add reference to jQuery libraries:
+			</p>
+			<pre>
+&lt;head&gt;
+ &lt;!-- head stuff --&gt;
+ &lt;script type="text/javascript" src="lib/jquery/jquery-1.4.2.min.js"&gt;
+ &lt;/script&gt;
+&lt;/head&gt;</pre>
+			<p>
+				2. Add reference to Tinylicious javascript file:
+			</p>
+			<pre>
+&lt;body&gt;
+ &lt;!-- all the contents --&gt;
+ &lt;div id="scripts-at-the-end"&gt;
+  &lt;script type="text/javascript" src="tinylicious.js"&gt;&lt;/script&gt;
+ &lt;/div&gt;
+&lt;/body&gt;</pre>
+			<p>
+				3. Add this html code wherever you want to put the widget:
+			</p>
+			<pre>
+&lt;div id="tinylicious"&gt;
+ &lt;p class="title"&gt;&lt;span class="my"&gt;My&lt;/span&gt;Delicious&lt;/p&gt;
+ &lt;ol&gt;
+ &lt;/ol&gt;
+&lt;/div&gt;</pre>
+			<p>
+				4. Add the stylesheet for the widget or make your own:
+			</p>
+			<pre>
+&lt;head&gt;
+ &lt;link type="text/css" rel="stylesheet" href="tinylicious.css" /&gt;
+&lt;/head&gt;</pre>
+			<p>
+				5. And finally add this script:
+			</p>
+			<pre>
+&lt;script type="text/javascript"&gt;
+ $(document).ready(function(){
+  Tinylicious.LoadUserBookmarks('username', numberOfBookmarks);
+ });
+&lt;/script&gt;</pre>
+			<p>
+				where <em>username</em> will be most likely your username in delicious and <em>numberOfBookmarks</em>
+				the number of bookmarks you want the widget to display.
+			</p>
+			<div id="bmc">
+				<a href="http://www.barbarianmeetscoding.com" title="Go To Barbarian Meets Coding">
+					<img src="barbarianmeetscoding.png" title="Go To Barbarian Meets Coding" alt="Barbarian Meets Coding Title" />
+				</a>
+			</div>
+		</div>
+		<div id="scripts">
+			<script type="text/javascript" src="tinylicious.js"></script>
+		</div>
+    </body>
+</html>

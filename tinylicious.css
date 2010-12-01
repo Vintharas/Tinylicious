@@ -1,0 +1,58 @@
+
+div#tinylicious
+{
+	width: 180px;
+	margin: 20px auto;
+	padding: 5px;
+	font: 10px Verdana, Tahoma, sans-serif;
+	border: 1px solid #ddd;
+	border-radius 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 1px 1px 1px #888;
+	-moz-box-shadow: 1px 1px 1px #888;
+	-webkit-box-shadow: 1px 1px 1px #888;
+}
+
+div#tinylicious p
+{
+	font: 14px Arial, Helvetica, sans-serif;
+	display:block;
+	/*border-bottom: 1px solid #5df;*/
+	margin-top: 5px;
+}
+
+div#tinylicious p span.my
+{
+	color: #6cf;
+}
+
+div#tinylicious ol
+{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	color: gray;
+}
+
+div#tinylicious ol li
+{
+	padding-bottom: 5px;	
+}
+
+
+div#tinylicious ol li.hidden-list-element
+{
+	display: none;	
+}
+
+div#tinylicious ol li a
+{
+	text-decoration: none;
+	color: gray;
+}
+
+div#tinylicious ol li a:hover
+{
+	color: orange;
+}

@@ -1,0 +1,56 @@
+/* CSS */
+
+body
+{
+	font: 14px Verdana, Tahoma, sans-serif;
+	color: #777;
+	background-color: #efefef;	
+}
+
+h1,h2,h3,h4
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #595959;	
+}
+
+h1
+{
+	text-align: center;	
+}
+
+a
+{
+	text-decoration: none;
+	color: #444;
+}
+
+a:hover
+{
+	color: #6cf;
+}
+
+pre
+{
+	overflow: auto;
+	font-size: 12px;
+	padding: 5px;
+	background-color: #eff;	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#content{
+	width: 500px;
+	margin: 50px auto;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#content img{
+	display: block;
+	margin: 0 auto;
+}
